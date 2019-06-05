@@ -10,6 +10,7 @@
 #Impresiones
 - Se definió información sobre el tamaño de la memoria al inicio y al ir re ejecutando programa.
 - Se imprimen los datos incluidos en el struct.
+- Se utiliza un puntero temp para castear puntero global ptr y así imprimirlo.
 
 #Opciones del programa
 - Al inicio, se pide cantidad de elementos.
@@ -18,3 +19,7 @@
 #Gestión de fallos.
 - Al redimensionar memoria con realloc se utiliza puntero temporal ptr1 para evitar cualquier fallos que provoque pérdida de información.
 - Esto mediante estructura if que en caso de reasignación satisfactoria, pasar datos al puntero global para continuar.
+
+
+#Problema 2
+- Usé un nuevo puntero del mismo tipo que ptr, se modificó mediante malloc y calloc luego se comparó con ptr.
